@@ -1,38 +1,35 @@
 buildscript {
     repositories {
+        jcenter()
         mavenCentral()
         maven { url = "http://files.minecraftforge.net/maven" }
         maven { url = "https://oss.sonatype.org/content/repositories/snapshots/" }
     }
     dependencies { classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT' }
 }
-plugins {
-    id 'io.franzbecker.gradle-lombok' version '1.7'
-	id 'com.matthewprenger.cursegradle' version '1.0.7'
-}
 
+apply plugin: 'java'
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-ext.buildnumber = 0
-if (System.getenv('BUILD_NUMBER') != null)
-    project.buildnumber = System.getenv('BUILD_NUMBER')
-else
-    logger.lifecycle "No build number detected, setting to 0"
+group = "grimco.colorblindhelper"
+archivesBaseName = "GrimCoColorblindHelper"
+version = "${mod_version}"
 
-group = "tterrag.colorblindhelper"
-archivesBaseName = "ColorblindHelper"
-version = "${minecraft_version}-${mod_version}.${buildnumber}"
+sourceCompatibility = targetCompatibility = "1.8"
 
-if (!project.curse_type.equals('release'))
-    version += "_${project.curse_type}"
+compileJava {
+    sourceCompatibility = targetCompatibility = "1.8"
+}
 
 minecraft {
     version = "${minecraft_version}-${forge_version}"
     runDir = 'run'
-    
+
     mappings = 'snapshot_20171212'
 
     replace "@VERSION@", project.version
+    replace "@FINGER@", project.findProperty("signSHA1")
+
     replaceIn "ColorblindHelper.java"
 }
 
@@ -40,67 +37,77 @@ configurations {
     compile.extendsFrom exportedCompile
 }
 
-repositories {
-    maven { url = "http://maven.tterrag.com" }
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+        resources {
+            srcDir 'resources'
+        }
+    }
 }
-
-dependencies {
-    deobfCompile "com.enderio.core:EnderCore:${endercore_version}"
-}
-
-lombok {
-    version = "1.16.10"
-    sha256 = null // skip
-}
-
-import io.franzbecker.gradle.lombok.task.DelombokTask
-
-task delombok(type: DelombokTask) {
-    args("src/main/java", "-d", "build/sources/delomboked/java")
-}
-
-tasks.eclipse.dependsOn installLombok
 
 processResources {
+    // this will ensure that this task is redone when the versions change.
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
 
+    // replace stuff in mcmod.info, nothing else
     from(sourceSets.main.resources.srcDirs) {
-        include '**/*.info'
-        include '**/*.properties'
+        include "mcmod.info"
 
-        expand 'version': project.version, 'mcversion': project.minecraft.version
+        // replace version and mcversion
+        expand "version": project.version, "mcversion": "1.12.2"
     }
 
+    // copy everything else, thats not the mcmod.info
     from(sourceSets.main.resources.srcDirs) {
-        exclude '**/*.info'
-        exclude '**/*.properties'
+        exclude "mcmod.info"
     }
 }
 
-if (JavaVersion.current().isJava8Compatible()) {
-    allprojects {
-        tasks.withType(Javadoc) {
-            options.addStringOption('Xdoclint:none', '-quiet')
-        }
+jar {
+    from { configurations.exportedCompile.collect { it.isDirectory() ? it : zipTree(it) } }
+    manifest {
+        attributes 'FMLCorePlugin': 'grimco.colorblindhelper.transform.ColorblindHelperPlugin'
+        attributes 'FMLCorePluginContainsFMLMod': 'true'
     }
 }
 
-build.dependsOn sourceJar
-
-curseforge {
-    if (project.hasProperty('curseforge_key')) {
-        apiKey = project.curseforge_key
-    }
-
-    project {
-        id = project.curse_projectId
-        changelog = System.getenv('CHANGELOG') == null || System.getenv('CHANGELOG').equals('none') ? getChangelog() : System.getenv('CHANGELOG')
-        changelogType = 'html'
-        releaseType = project.curse_type
-		addGameVersion '1.10.2'
-        mainArtifact(jar) {
-            displayName = "ColorblindHelper - ${version}"
-        }
-    }
+task deobfJar(type: Jar) {
+    from sourceSets.main.output
+    from { configurations.exportedCompile.collect { it.isDirectory() ? it : zipTree(it) } }
+    classifier = 'deobf'
 }
+
+build.dependsOn deobfJar
+
+String getCN() {
+    def firsts = ['Donald', 'Lex', 'Mike', 'Arthur', 'Bridget', 'Dorian', 'Ford', 'Guy', 'James', 'Jessica', 'John', 'Michael', 'Robinson', 'Zaphod', 'Bell', 'Penelope']
+    def lasts = ['Duck', 'Luthor', 'Meyers', 'Dent', 'Jones', 'Gray', 'Prefect', 'Montag', 'Moriarty', 'Rabbit', 'Watson', 'Smith', 'Corleone', 'Crusoe', 'Beeblebrox', 'Cranel', 'Akk']
+    def rand = new Random()
+    return firsts[rand.nextInt(firsts.size())] + ' ' + lasts[rand.nextInt(lasts.size())]
+}
+
+task mkKeyStore(type: Exec) {
+    workingDir projectDir
+    commandLine 'keytool', '-genkey', '-alias', 'signFiles', '-keystore', 'ecstore.jks', '-storepass', '123456', '-noprompt', '-dname', 'CN='+getCN(), '-keypass', '123456'
+}
+
+task signJar(type: SignJar, dependsOn: reobfJar) {
+    inputFile = jar.archivePath
+    outputFile = jar.archivePath
+    keyStore = 'ecstore.jks'
+    alias = 'signFiles'
+    storePass = '123456'
+    keyPass = '123456'
+}
+
+task rmKeyStore(type: Delete) {
+    delete 'ecstore.jks'
+}
+
+build.dependsOn rmKeyStore
+rmKeyStore.dependsOn signJar
+signJar.dependsOn mkKeyStore

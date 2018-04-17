@@ -71,6 +71,725 @@
     {
       "stack": "ingotArdite",
       "overlay": "Ard"
+    },
+    {
+      "stack": "ingotUranium",
+      "overlay": "U"
+    },
+    {
+      "stack": "ingotHOPGraphite",
+      "overlay": "HOPG"
+    },
+    {
+      "stack": "ingotTitanium",
+      "overlay": "Ti"
+    },
+    {
+      "stack": "ingotObsidianSteel",
+      "overlay": "OStl"
+    },
+    {
+      "stack": "ingotOsmium",
+      "overlay": "Os"
+    },
+    {
+      "stack": "ingotIridium",
+      "overlay": "Ir"
+    },
+    {
+      "stack": "ingotConstantan",
+      "overlay": "CuNi"
+    },
+    {
+      "stack": "ingotRefinedObsidian",
+      "overlay": "RObs"
+    },
+    {
+      "stack": "ingotRefinedGlowstone",
+      "overlay": "RGlo"
+    },
+    {
+      "stack": "ingotSignalum",
+      "overlay": "Sig"
+    },
+    {
+      "stack": "ingotMithril",
+      "overlay": "Mith"
+    },
+    {
+      "stack": "ingotLumium",
+      "overlay": "Lum"
+    },
+    {
+      "stack": "ingotEnderium",
+      "overlay": "Endr"
+    },
+    {
+      "stack": "ingotCeramic",
+      "overlay": "Cer"
+    },
+    {
+      "stack": "ingotCarbon",
+      "overlay": "C"
+    },
+    {
+      "stack": "plateIron",
+      "overlay": "Fe"
+    },
+    {
+      "stack": "plateGold",
+      "overlay": "Au"
+    },
+    {
+      "stack": "plateCopper",
+      "overlay": "Cu"
+    },
+    {
+      "stack": "plateTin",
+      "overlay": "Sn"
+    },
+    {
+      "stack": "plateLead",
+      "overlay": "Pb"
+    },
+    {
+      "stack": "plateBronze",
+      "overlay": "Bz"
+    },
+    {
+      "stack": "plateSteel",
+      "overlay": "Stl"
+    },
+    {
+      "stack": "plateAluminum",
+      "overlay": "Al"
+    },
+    {
+      "stack": "plateAluminium",
+      "overlay": "Al"
+    },
+    {
+      "stack": "plateNickel",
+      "overlay": "Ni"
+    },
+    {
+      "stack": "platePlatinum",
+      "overlay": "Pt"
+    },
+    {
+      "stack": "plateElectrum",
+      "overlay": "Ec"
+    },
+    {
+      "stack": "plateInvar",
+      "overlay": "Inv"
+    },
+    {
+      "stack": "plateSilver",
+      "overlay": "Ag"
+    },
+    {
+      "stack": "plateCobalt",
+      "overlay": "Co"
+    },
+    {
+      "stack": "plateBrass",
+      "overlay": "Br"
+    },
+    {
+      "stack": "plateAluminumBrass",
+      "overlay": "AlBr"
+    },
+    {
+      "stack": "plateArdite",
+      "overlay": "Ard"
+    },
+    {
+      "stack": "plateUranium",
+      "overlay": "U"
+    },
+    {
+      "stack": "plateHOPGraphite",
+      "overlay": "HOPG"
+    },
+    {
+      "stack": "plateTitanium",
+      "overlay": "Ti"
+    },
+    {
+      "stack": "plateObsidianSteel",
+      "overlay": "OStl"
+    },
+    {
+      "stack": "plateOsmium",
+      "overlay": "Os"
+    },
+    {
+      "stack": "plateIridium",
+      "overlay": "Ir"
+    },
+    {
+      "stack": "plateConstantan",
+      "overlay": "CuNi"
+    },
+    {
+      "stack": "plateRefinedObsidian",
+      "overlay": "RObs"
+    },
+    {
+      "stack": "plateRefinedGlowstone",
+      "overlay": "RGlo"
+    },
+    {
+      "stack": "plateSignalum",
+      "overlay": "Sig"
+    },
+    {
+      "stack": "plateMithril",
+      "overlay": "Mith"
+    },
+    {
+      "stack": "plateLumium",
+      "overlay": "Lum"
+    },
+    {
+      "stack": "plateEnderium",
+      "overlay": "Endr"
+    },
+    {
+      "stack": "plateCeramic",
+      "overlay": "Cer"
+    },
+    {
+      "stack": "plateCarbon",
+      "overlay": "C"
+    },{
+      "stack": "gearIron",
+      "overlay": "Fe"
+    },
+    {
+      "stack": "gearGold",
+      "overlay": "Au"
+    },
+    {
+      "stack": "gearCopper",
+      "overlay": "Cu"
+    },
+    {
+      "stack": "gearTin",
+      "overlay": "Sn"
+    },
+    {
+      "stack": "gearLead",
+      "overlay": "Pb"
+    },
+    {
+      "stack": "gearBronze",
+      "overlay": "Bz"
+    },
+    {
+      "stack": "gearSteel",
+      "overlay": "Stl"
+    },
+    {
+      "stack": "gearAluminum",
+      "overlay": "Al"
+    },
+    {
+      "stack": "gearAluminium",
+      "overlay": "Al"
+    },
+    {
+      "stack": "gearNickel",
+      "overlay": "Ni"
+    },
+    {
+      "stack": "gearPlatinum",
+      "overlay": "Pt"
+    },
+    {
+      "stack": "gearElectrum",
+      "overlay": "Ec"
+    },
+    {
+      "stack": "gearInvar",
+      "overlay": "Inv"
+    },
+    {
+      "stack": "gearSilver",
+      "overlay": "Ag"
+    },
+    {
+      "stack": "gearCobalt",
+      "overlay": "Co"
+    },
+    {
+      "stack": "gearBrass",
+      "overlay": "Br"
+    },
+    {
+      "stack": "gearAluminumBrass",
+      "overlay": "AlBr"
+    },
+    {
+      "stack": "gearArdite",
+      "overlay": "Ard"
+    },
+    {
+      "stack": "gearUranium",
+      "overlay": "U"
+    },
+    {
+      "stack": "gearHOPGraphite",
+      "overlay": "HOPG"
+    },
+    {
+      "stack": "gearTitanium",
+      "overlay": "Ti"
+    },
+    {
+      "stack": "gearObsidianSteel",
+      "overlay": "OStl"
+    },
+    {
+      "stack": "gearOsmium",
+      "overlay": "Os"
+    },
+    {
+      "stack": "gearIridium",
+      "overlay": "Ir"
+    },
+    {
+      "stack": "gearConstantan",
+      "overlay": "CuNi"
+    },
+    {
+      "stack": "gearRefinedObsidian",
+      "overlay": "RObs"
+    },
+    {
+      "stack": "gearRefinedGlowstone",
+      "overlay": "RGlo"
+    },
+    {
+      "stack": "gearSignalum",
+      "overlay": "Sig"
+    },
+    {
+      "stack": "gearMithril",
+      "overlay": "Mith"
+    },
+    {
+      "stack": "gearLumium",
+      "overlay": "Lum"
+    },
+    {
+      "stack": "gearEnderium",
+      "overlay": "Endr"
+    },
+    {
+      "stack": "gearCeramic",
+      "overlay": "Cer"
+    },
+    {
+      "stack": "gearCarbon",
+      "overlay": "C"
+    },
+    {
+      "stack": "dustIron",
+      "overlay": "Fe"
+    },
+    {
+      "stack": "dustGold",
+      "overlay": "Au"
+    },
+    {
+      "stack": "dustCopper",
+      "overlay": "Cu"
+    },
+    {
+      "stack": "dustTin",
+      "overlay": "Sn"
+    },
+    {
+      "stack": "dustLead",
+      "overlay": "Pb"
+    },
+    {
+      "stack": "dustBronze",
+      "overlay": "Bz"
+    },
+    {
+      "stack": "dustSteel",
+      "overlay": "Stl"
+    },
+    {
+      "stack": "dustAluminum",
+      "overlay": "Al"
+    },
+    {
+      "stack": "dustAluminium",
+      "overlay": "Al"
+    },
+    {
+      "stack": "dustNickel",
+      "overlay": "Ni"
+    },
+    {
+      "stack": "dustPlatinum",
+      "overlay": "Pt"
+    },
+    {
+      "stack": "dustElectrum",
+      "overlay": "Ec"
+    },
+    {
+      "stack": "dustInvar",
+      "overlay": "Inv"
+    },
+    {
+      "stack": "dustSilver",
+      "overlay": "Ag"
+    },
+    {
+      "stack": "dustCobalt",
+      "overlay": "Co"
+    },
+    {
+      "stack": "dustBrass",
+      "overlay": "Br"
+    },
+    {
+      "stack": "dustAluminumBrass",
+      "overlay": "AlBr"
+    },
+    {
+      "stack": "dustArdite",
+      "overlay": "Ard"
+    },
+    {
+      "stack": "dustUranium",
+      "overlay": "U"
+    },
+    {
+      "stack": "dustHOPGraphite",
+      "overlay": "HOPG"
+    },
+    {
+      "stack": "dustTitanium",
+      "overlay": "Ti"
+    },
+    {
+      "stack": "dustObsidianSteel",
+      "overlay": "OStl"
+    },
+    {
+      "stack": "dustOsmium",
+      "overlay": "Os"
+    },
+    {
+      "stack": "dustIridium",
+      "overlay": "Ir"
+    },
+    {
+      "stack": "dustConstantan",
+      "overlay": "CuNi"
+    },
+    {
+      "stack": "dustRefinedObsidian",
+      "overlay": "RObs"
+    },
+    {
+      "stack": "dustRefinedGlowstone",
+      "overlay": "RGlo"
+    },
+    {
+      "stack": "dustSignalum",
+      "overlay": "Sig"
+    },
+    {
+      "stack": "dustMithril",
+      "overlay": "Mith"
+    },
+    {
+      "stack": "dustLumium",
+      "overlay": "Lum"
+    },
+    {
+      "stack": "dustEnderium",
+      "overlay": "Endr"
+    },
+    {
+      "stack": "dustCeramic",
+      "overlay": "Cer"
+    },
+    {
+      "stack": "dustCarbon",
+      "overlay": "C"
+    },
+    {
+      "stack": "nuggetIron",
+      "overlay": "Fe"
+    },
+    {
+      "stack": "nuggetGold",
+      "overlay": "Au"
+    },
+    {
+      "stack": "nuggetCopper",
+      "overlay": "Cu"
+    },
+    {
+      "stack": "nuggetTin",
+      "overlay": "Sn"
+    },
+    {
+      "stack": "nuggetLead",
+      "overlay": "Pb"
+    },
+    {
+      "stack": "nuggetBronze",
+      "overlay": "Bz"
+    },
+    {
+      "stack": "nuggetSteel",
+      "overlay": "Stl"
+    },
+    {
+      "stack": "nuggetAluminum",
+      "overlay": "Al"
+    },
+    {
+      "stack": "nuggetAluminium",
+      "overlay": "Al"
+    },
+    {
+      "stack": "nuggetNickel",
+      "overlay": "Ni"
+    },
+    {
+      "stack": "nuggetPlatinum",
+      "overlay": "Pt"
+    },
+    {
+      "stack": "nuggetElectrum",
+      "overlay": "Ec"
+    },
+    {
+      "stack": "nuggetInvar",
+      "overlay": "Inv"
+    },
+    {
+      "stack": "nuggetSilver",
+      "overlay": "Ag"
+    },
+    {
+      "stack": "nuggetCobalt",
+      "overlay": "Co"
+    },
+    {
+      "stack": "nuggetBrass",
+      "overlay": "Br"
+    },
+    {
+      "stack": "nuggetAluminumBrass",
+      "overlay": "AlBr"
+    },
+    {
+      "stack": "nuggetArdite",
+      "overlay": "Ard"
+    },
+    {
+      "stack": "nuggetUranium",
+      "overlay": "U"
+    },
+    {
+      "stack": "nuggetHOPGraphite",
+      "overlay": "HOPG"
+    },
+    {
+      "stack": "nuggetTitanium",
+      "overlay": "Ti"
+    },
+    {
+      "stack": "nuggetObsidianSteel",
+      "overlay": "OStl"
+    },
+    {
+      "stack": "nuggetOsmium",
+      "overlay": "Os"
+    },
+    {
+      "stack": "nuggetIridium",
+      "overlay": "Ir"
+    },
+    {
+      "stack": "nuggetConstantan",
+      "overlay": "CuNi"
+    },
+    {
+      "stack": "nuggetRefinedObsidian",
+      "overlay": "RObs"
+    },
+    {
+      "stack": "nuggetRefinedGlowstone",
+      "overlay": "RGlo"
+    },
+    {
+      "stack": "nuggetSignalum",
+      "overlay": "Sig"
+    },
+    {
+      "stack": "nuggetMithril",
+      "overlay": "Mith"
+    },
+    {
+      "stack": "nuggetLumium",
+      "overlay": "Lum"
+    },
+    {
+      "stack": "nuggetEnderium",
+      "overlay": "Endr"
+    },
+    {
+      "stack": "nuggetCeramic",
+      "overlay": "Cer"
+    },
+    {
+      "stack": "nuggetCarbon",
+      "overlay": "C"
+    },
+    {
+      "stack": "blockIron",
+      "overlay": "Fe"
+    },
+    {
+      "stack": "blockGold",
+      "overlay": "Au"
+    },
+    {
+      "stack": "blockCopper",
+      "overlay": "Cu"
+    },
+    {
+      "stack": "blockTin",
+      "overlay": "Sn"
+    },
+    {
+      "stack": "blockLead",
+      "overlay": "Pb"
+    },
+    {
+      "stack": "blockBronze",
+      "overlay": "Bz"
+    },
+    {
+      "stack": "blockSteel",
+      "overlay": "Stl"
+    },
+    {
+      "stack": "blockAluminum",
+      "overlay": "Al"
+    },
+    {
+      "stack": "blockAluminium",
+      "overlay": "Al"
+    },
+    {
+      "stack": "blockNickel",
+      "overlay": "Ni"
+    },
+    {
+      "stack": "blockPlatinum",
+      "overlay": "Pt"
+    },
+    {
+      "stack": "blockElectrum",
+      "overlay": "Ec"
+    },
+    {
+      "stack": "blockInvar",
+      "overlay": "Inv"
+    },
+    {
+      "stack": "blockSilver",
+      "overlay": "Ag"
+    },
+    {
+      "stack": "blockCobalt",
+      "overlay": "Co"
+    },
+    {
+      "stack": "blockBrass",
+      "overlay": "Br"
+    },
+    {
+      "stack": "blockAluminumBrass",
+      "overlay": "AlBr"
+    },
+    {
+      "stack": "blockArdite",
+      "overlay": "Ard"
+    },
+    {
+      "stack": "blockUranium",
+      "overlay": "U"
+    },
+    {
+      "stack": "blockHOPGraphite",
+      "overlay": "HOPG"
+    },
+    {
+      "stack": "blockTitanium",
+      "overlay": "Ti"
+    },
+    {
+      "stack": "blockObsidianSteel",
+      "overlay": "OStl"
+    },
+    {
+      "stack": "blockOsmium",
+      "overlay": "Os"
+    },
+    {
+      "stack": "blockIridium",
+      "overlay": "Ir"
+    },
+    {
+      "stack": "blockConstantan",
+      "overlay": "CuNi"
+    },
+    {
+      "stack": "blockRefinedObsidian",
+      "overlay": "RObs"
+    },
+    {
+      "stack": "blockRefinedGlowstone",
+      "overlay": "RGlo"
+    },
+    {
+      "stack": "blockSignalum",
+      "overlay": "Sig"
+    },
+    {
+      "stack": "blockMithril",
+      "overlay": "Mith"
+    },
+    {
+      "stack": "blockLumium",
+      "overlay": "Lum"
+    },
+    {
+      "stack": "blockEnderium",
+      "overlay": "Endr"
+    },
+    {
+      "stack": "blockCeramic",
+      "overlay": "Cer"
+    },
+    {
+      "stack": "blockCarbon",
+      "overlay": "C"
     }
   ],
   "custom": [

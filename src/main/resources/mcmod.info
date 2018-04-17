@@ -1,0 +1,16 @@
+[
+{
+  "modid": "colorblindhelper",
+  "name": "Colorblind Helper - GrimCo Edition",
+  "description": "Helps identifying Items. Modified for use by GrimCo",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["tterrag","GrimCo"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
