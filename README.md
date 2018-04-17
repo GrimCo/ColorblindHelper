@@ -5,3 +5,5 @@ This fork is based off othe work of tterrag in Colorblind Helper and has been ch
 
 As such, this mod contains a core mod if that sort of thing scares you.
 
+Downloads can be found here:
+https://github.com/GrimCo/ColorblindHelper/releases
